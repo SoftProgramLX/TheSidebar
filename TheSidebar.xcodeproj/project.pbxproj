@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		18322C3D1AC2A24900D4579E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18322C3C1AC2A24900D4579E /* AppDelegate.m */; };
-		18322C401AC2A24900D4579E /* TheSidebar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18322C3E1AC2A24900D4579E /* TheSidebar.xcdatamodeld */; };
 		18322C431AC2A24900D4579E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18322C421AC2A24900D4579E /* ViewController.m */; };
 		18322C461AC2A24900D4579E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18322C441AC2A24900D4579E /* Main.storyboard */; };
 		18322C481AC2A24900D4579E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18322C471AC2A24900D4579E /* Images.xcassets */; };
@@ -19,6 +18,7 @@
 		18322C771AC2A51B00D4579E /* LXSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18322C6F1AC2A51B00D4579E /* LXSliderView.m */; };
 		18322C781AC2A51B00D4579E /* LXShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18322C721AC2A51B00D4579E /* LXShowView.m */; };
 		18322C791AC2A51B00D4579E /* LXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18322C741AC2A51B00D4579E /* LXViewController.m */; };
+		5CE67EC11D4F6AF500B5DCFC /* TheSidebar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CE67EBF1D4F6AF500B5DCFC /* TheSidebar.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 		18322C341AC2A24900D4579E /* TheSidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSidebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18322C3B1AC2A24900D4579E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18322C3C1AC2A24900D4579E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18322C3F1AC2A24900D4579E /* TheSidebar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheSidebar.xcdatamodel; sourceTree = "<group>"; };
 		18322C411AC2A24900D4579E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		18322C421AC2A24900D4579E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18322C451AC2A24900D4579E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		18322C721AC2A51B00D4579E /* LXShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXShowView.m; sourceTree = "<group>"; };
 		18322C731AC2A51B00D4579E /* LXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXViewController.h; sourceTree = "<group>"; };
 		18322C741AC2A51B00D4579E /* LXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXViewController.m; sourceTree = "<group>"; };
+		5CE67EC01D4F6AF500B5DCFC /* TheSidebar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheSidebar.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +107,10 @@
 		18322C371AC2A24900D4579E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5CE67EBF1D4F6AF500B5DCFC /* TheSidebar.xcdatamodeld */,
 				18322C441AC2A24900D4579E /* Main.storyboard */,
 				18322C471AC2A24900D4579E /* Images.xcassets */,
 				18322C491AC2A24900D4579E /* LaunchScreen.xib */,
-				18322C3E1AC2A24900D4579E /* TheSidebar.xcdatamodeld */,
 				18322C601AC2A2A600D4579E /* Info.plist */,
 				18322C611AC2A2A600D4579E /* main.m */,
 			);
@@ -261,8 +261,8 @@
 				18322C771AC2A51B00D4579E /* LXSliderView.m in Sources */,
 				18322C781AC2A51B00D4579E /* LXShowView.m in Sources */,
 				18322C431AC2A24900D4579E /* ViewController.m in Sources */,
-				18322C401AC2A24900D4579E /* TheSidebar.xcdatamodeld in Sources */,
 				18322C791AC2A51B00D4579E /* LXViewController.m in Sources */,
+				5CE67EC11D4F6AF500B5DCFC /* TheSidebar.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,12 +469,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		18322C3E1AC2A24900D4579E /* TheSidebar.xcdatamodeld */ = {
+		5CE67EBF1D4F6AF500B5DCFC /* TheSidebar.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				18322C3F1AC2A24900D4579E /* TheSidebar.xcdatamodel */,
+				5CE67EC01D4F6AF500B5DCFC /* TheSidebar.xcdatamodel */,
 			);
-			currentVersion = 18322C3F1AC2A24900D4579E /* TheSidebar.xcdatamodel */;
+			currentVersion = 5CE67EC01D4F6AF500B5DCFC /* TheSidebar.xcdatamodel */;
 			path = TheSidebar.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

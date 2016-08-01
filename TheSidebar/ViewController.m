@@ -25,17 +25,17 @@
     self.view.backgroundColor = [UIColor greenColor];
     
     UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(280, 100, 200, 40)];
-    lab.text = @"向右滑动";
+    lab.text = @"向右拖动";
     [self.view addSubview:lab];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(backBtn:)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(leftBarBtnClicked:)];
     
     self.showLeftView = [[LXShowView alloc] initWithFrame:CGRectMake(-0.75*kMainScreenWidth, 0, 0.75*kMainScreenWidth, kMainScreenHeight) withRootController:self];
     self.showLeftView.delegate = self;
     [self.navigationController.view addSubview:self.showLeftView];
 }
 
-- (void)backBtn:(id)sender
+- (void)leftBarBtnClicked:(id)sender
 {
     [self.showLeftView openSilderView];
 }
