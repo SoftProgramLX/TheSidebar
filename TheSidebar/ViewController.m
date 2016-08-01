@@ -12,6 +12,7 @@
 // 屏幕宽与高
 #define kMainScreenWidth  ([UIScreen mainScreen].applicationFrame.size.width)
 #define kMainScreenHeight (([UIScreen mainScreen].applicationFrame.size.height)+20)
+#define kSidebarWidthRatio 0.75
 
 @interface ViewController ()
 @property (strong, nonatomic) LXShowView *showLeftView;
@@ -30,7 +31,7 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(leftBarBtnClicked:)];
     
-    self.showLeftView = [[LXShowView alloc] initWithFrame:CGRectMake(-0.75*kMainScreenWidth, 0, 0.75*kMainScreenWidth, kMainScreenHeight) withRootController:self];
+    self.showLeftView = [[LXShowView alloc] initWithFrame:CGRectMake(-kSidebarWidthRatio*kMainScreenWidth, 0, kSidebarWidthRatio*kMainScreenWidth, kMainScreenHeight) withRootController:self];
     self.showLeftView.delegate = self;
     [self.navigationController.view addSubview:self.showLeftView];
 }
